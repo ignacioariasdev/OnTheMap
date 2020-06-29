@@ -32,7 +32,7 @@ class ListVC: UITableViewController {
 	}
 
 	private func getStudents() {
-		UdacityClient.getAllStudentLocationsWithLimit(limit: 7) { (results, error) in
+		UdacityClient.getAllStudentLocationsWithLimit(limit: 101) { (results, error) in
 			if let results = results {
 				StudentModel.students = results
 
